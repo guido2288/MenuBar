@@ -1,0 +1,78 @@
+body {
+    width: 960px;
+    margin: auto;
+}
+.grid-container {
+    display: grid;
+    grid-template-areas:"head head head" 
+                        "menu main main"
+                        "foot foot icono";  
+    
+}
+
+.head {grid-area: head;
+       border-bottom: 1px solid black;
+       padding-bottom: 20px;
+}
+     
+.naveg {grid-area: menu;
+        padding: 15px;
+        width: 200px;
+        font-family: 'Lobster', cursive;
+        font-size: 27px;
+}
+.main {grid-area: main;
+       border-left: 1px solid black;
+       padding: 15px;
+       width: 660px;
+   
+       
+}
+.pie {grid-area: foot;
+      height: 200px;
+      background-image: url(../img/logo-web.png);
+      background-size: 370px;
+      background-repeat: no-repeat;
+      padding: 20px;
+}
+.iconos{
+    grid-area: icono;
+}
+.retorno {
+    padding: 10px;
+}
+section {
+    padding: 10px;
+}
+#entradas {
+    background-image: url(../img/foto-entradas.jpg);
+    background-repeat: no-repeat;
+    background-position-x: 350px;
+    
+}
+#platosP{
+    background-image: url(../img/foto-ppal.jpg);
+    background-repeat: no-repeat;
+    background-position-x: 350px;
+}
+#postres{
+    background-image: url(../img/foto-postre.jpg);
+    background-repeat: no-repeat;
+    background-position-x: 350px;
+}
+h1{
+    font-family: 'Girassol', cursive;
+    font-size: 36;
+}
+h2 {
+    font-family: 'Girassol', cursive;
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 21px;
+}
+
+
+
+

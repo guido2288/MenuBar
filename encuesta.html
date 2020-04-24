@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/encuesta.css">
+    <link href="https://fonts.googleapis.com/css2?family=Girassol&family=Lobster&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Encuesta Santa Maria Bar</h1>
+    <h2>¿De dónde sos?</h2>
+    <select name="pais" id="selector">
+         <option value="Ar">Argentina</option>
+         <option value="Bo">Bolivia</option>
+         <option value="Br">Brasin</option>
+         <option value="Cl">Chile</option>
+         <option value="Co">Colombia</option>
+         <option value="Ec">Ecuador</option>
+         <option value="Pay">Paraguay</option>
+         <option value="Otro">Otros</option>
+    </select>
+
+    <h2>¿Qué te pareció la iluminación del lugar?</h2>
+    <input type="checkbox" name="iluminación" value="B">Muy acorde <br>
+    <input type="checkbox" name="iluminación" value="R">Buena, pero podría mejorar <br>
+    <input type="checkbox" name="iluminación" value="M">Mala <br>
+    <h2>¿Qué tipo de plato fue el que más te gustó?</h2>
+    <input type="checkbox" name="plato" value="entrada">Entrada <br>
+    <input type="checkbox" name="plato" value="platoP">Plato principal <br>
+    <input type="checkbox" name="plato" value="postre">Postre <br>
+    <input type="checkbox" name="plato" value="otro">Otros <br>
+    <h2>¿Reomendarías el lugar?</h2>
+    <input type="radio" name="recomienda" value="si">Si
+    <input type="radio" name="recomienda" value="no">No
+    <br>
+    <h2>¿Porqué?</h2>
+    <textarea name="opinion" id="op" cols="70" rows="10"></textarea><br>
+    <h2>Dejanos tus datos y nos pondremos en contacto con vos</h2>
+    <form action="validar" method="POST">
+        <p>
+           <label for="nombre">Nombre:</label>
+           <input type="text" name="nombre" id="nombre" required>
+        </p>
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+
+    </form>
+
+
+    
+</body>
+</html>
